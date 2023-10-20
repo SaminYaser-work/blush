@@ -45,8 +45,9 @@ export default function Footer() {
                                 ))
                             }
                             <div className={"w-full p-2 bg-slate-500 flex justify-between items-center"}>
-                                <input type="text" placeholder={"Search"} className={"bg-transparent outline-0"} aria-label={"search"} />
-                                <BsSearch className="inline-block ml-auto" />
+                                <input type="text" placeholder={"Search"} className={"bg-transparent outline-0"}
+                                       aria-label={"search"}/>
+                                <BsSearch className="inline-block ml-auto"/>
                             </div>
                         </div>
                     </div>
@@ -56,7 +57,8 @@ export default function Footer() {
                             {
                                 Array(3).fill(0).map((_, i) => (
                                     <li key={i} className={"w-full flex justify-start items-start gap-3"}>
-                                        <img src={"https://picsum.photos/100/100"} className={"object-cover"}
+                                        <img crossOrigin={"anonymous"} src={"https://picsum.photos/100/100"}
+                                             className={"object-cover"}
                                              alt={"post-pic"}/>
                                         <div className={"self-stretch"}>
                                             <h3 className={"text-xl mb-5"}>Lorem ipsum dolor sit amet.</h3>
@@ -74,7 +76,8 @@ export default function Footer() {
                             <div className={"grid grid-rows-2 grid-cols-3 justify-items-stretch gap-5 w-full mb-5"}>
                                 {
                                     Array(6).fill(0).map((_, i) => (
-                                        <img key={i} src={"https://picsum.photos/100/100"} className={"object-cover"}
+                                        <img crossOrigin={"anonymous"} key={i} src={"https://picsum.photos/100/100"}
+                                             className={"object-cover"}
                                              alt={"post-pic"}/>
                                     ))
                                 }
@@ -93,7 +96,7 @@ export default function Footer() {
                 </div>
                 <hr className={"border-t-4 border-slate-700"}/>
                 <div className="flex items-center justify-between gap-5 py-10">
-                    <img src={logo} alt="logo" className="mr-10"/>
+                    <img crossOrigin={"anonymous"} src={logo} alt="logo" className="mr-10"/>
                     <div className={"flex items-center justify-between gap-5"}>
                         {footerLinks.map((item, i) => (
                             <a href={"#"} className="font-medium" key={i}>

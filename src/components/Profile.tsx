@@ -15,7 +15,7 @@ export default function Profile() {
         <div className={"w-full bg-[#DDDDDD]"}>
             <div className={"flex justify-center items-center gap-8 py-20 mx-auto container"}>
                 <div>
-                    <img src={'https://picsum.photos/560/560'} alt={"profile-pic"}
+                    <img crossOrigin={"anonymous"} src={'https://picsum.photos/560/560'} alt={"profile-pic"}
                          className={"object-cover rounded-full"}/>
                 </div>
                 <div className={"flex justify-center items-start flex-col gap-3 self-stretch"}>

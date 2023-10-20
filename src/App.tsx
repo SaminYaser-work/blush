@@ -149,6 +149,7 @@ function App() {
                         .fill(0)
                         .map((_, i) => (
                             <img
+                                crossOrigin={"anonymous"}
                                 key={i}
                                 width={260}
                                 height={260}
