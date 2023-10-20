@@ -22,7 +22,7 @@ function App() {
             </Section>
 
             <Section heading="Latest Posts">
-                <div className="flex justify-between items-center mb-8">
+                <div className="flex justify-between items-center flex-wrap mb-8">
                     {Array(3)
                         .fill(0)
                         .map((_, i) => (
@@ -88,7 +88,7 @@ function App() {
             </Section>
 
             <Section heading="Popular Posts">
-                <div className="flex justify-between items-center mb-8">
+                <div className="flex justify-between items-center flex-wrap mb-8">
                     {Array(3)
                         .fill(0)
                         .map((_, i) => (
