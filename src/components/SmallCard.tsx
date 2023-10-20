@@ -2,7 +2,7 @@ const data = ["Skin", "Hair", "Body", "Makeup", "Fragrance"];
 
 export default function SmallCard() {
     return (
-        <div className="flex flex-row items-center justify-between flex-wrap gap-5">
+        <div className="flex flex-row items-center justify-between gap-5">
             {data.map((item, i) => (
                 <div
                     key={i}
